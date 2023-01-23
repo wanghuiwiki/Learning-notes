@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			h3{
+				margin: 0;
+			}
+			li h3{
+				font-size: 14px;
+				font-weight: 400;
+			}
+			li{
+				height: 31px;
+				line-height: 31px;
+				border-bottom: 1px solid #dedede;
+			}
+			.cat{
+				width: 150px;
+				border:1px solid #f8f8f8;
+				background: #fafafa;
+			}
+			/*以下为新增代码\css雪碧图样式*/
+			li i{
+				background: url(images/sidebar.png);
+				float: left;
+				display: inline;
+				width: 30px;
+				height: 25px;
+				margin: 3px 10px 0 0;
+			}
+			.cat-1 i{
+				background-position: 0 0;
+			}
+			.cat-2 i{
+				background-position: 0 -24px;
+			}
+			.cat-3 i{
+				background-position: 0 -48px;
+			}
+			.cat-4 i{
+				background-position: 0 -72px;
+			}
+			.cat-5 i{
+				background-position: 0 -96px;
+			}
+			.cat-6 i{
+				background-position: 0 -120px;
+			}
+			.cat-7 i{
+				background-position: 0 -144px;
+			}
+			.cat-8 i{
+				background-position: 0 -168px;
+			}
+			.cat-9 i{
+				background-position: -40px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="cat">
+			<li class="cat-1"><i></i><h3>服装内衣</h3></li>
+			<li class="cat-2"><i></i><h3>鞋包配饰</h3></li>
+			<li class="cat-3"><i></i><h3>运动户外</h3></li>
+			<li class="cat-4"><i></i><h3>珠宝手表</h3></li>
+			<li class="cat-5"><i></i><h3>手机数码</h3></li>
+			<li class="cat-6"><i></i><h3>家电办公</h3></li>
+			<li class="cat-7"><i></i><h3>护肤彩妆</h3></li>
+			<li class="cat-8"><i></i><h3>母婴用品</h3></li>
+			<!-- 修改X轴坐标 -->
+			<li class="cat-9"><i></i><h3>其他分类</h3></li>
+		</ul>
+		<!-- 以下为可删除部分 -->
+		<hr>
+		<blockquote>
+			一、完成列表的结构后开始为列表中li i添加雪碧图样式<br>
+			提示:<br>
+			  1.首先为li添加不同的class，因为他们的background position值是不同的<br>
+			  2.根据li上添加的class，书写响应的样式<br>
+			  3.注意position的值为负数，因为雪碧图使用的坐标系是第四象限
+		</blockquote>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学习CSS Sprite雪碧图</title>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 800px;
+			margin: 0 auto;
+		}
+		ol li{
+			list-style: none;
+		}
+		body{
+			font-size: 16px;
+			line-height: 1.5em;
+		}
+		h2{
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 18px;
+			border-left: 6px solid #428bca;
+			margin: 5px;
+			padding: 5px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<p style="border: 1px solid #ccc;">
+			说明:为了减少http请求数量，加速网页内容显示，很多网站的导航栏图标、登录框图片等，使用的并不是<image>标签，而是CSS Sprite雪碧图。本课程分析了CSS Sprite雪碧图的实现原理，详细讲解制作方法，实现完整效果，让你快速掌握CSS Sprite雪碧图技术。课程学习链接:https://www.imooc.com/learn/93
+			</p>
+			<p>课程目录:</p>
+			<ol>
+				<li>第1章 CSS Sprite雪碧图介绍及实现原理</li>
+				<li>第2章 CSS Sprite雪碧图实现方式</li>
+				<li>第3章 CSS Sprite雪碧图的应用</li>
+				<li>第4章 编程挑战</li>
+			</ol>
+			<hr>
+			<h2>第1章 CSS Sprite雪碧图介绍及实现原理</h2>
+			<p>1-1CSS Sprite雪碧图使用场景 </p>
+			<div style="border: 1px solid #ccc;">
+				1.静态图片,不随用户信息的变化而变化<br>
+				2.小图片,图片容量比较小<br>
+				3.一些大图不建议拼成雪碧图{加载量比较大]<br>
+				有效减少http请求数量<br>
+				加速内容显示<br>
+				每请求一次,就会和服务器链接一次<br>
+				建立链接是需要额外时间的.
+			</div>
+			<p>1-2CSS Sprite雪碧图实现原理</p>
+			<p>主要运用css属性background-position,调取对应的坐标</p>
+			<p>如图:</p>
+			<p><img src="images/position.jpg" alt=""></p>
+			<p style="font-weight: bold;">控制一个层,可显示的区域范围大小,通过一个窗口,进行背景图的滑动.</p>
+			<h2>第2章 CSS Sprite雪碧图实现方式</h2>
+			<p>2-1 CSS Sprite雪碧图实现方式</p>
+			<p>介绍使用PS手动拼图和使用sprite工具自动生成雪碧图的方法
+			<a href="https://www.99css.com/1524/" target="_blank">CssGaga-从下载安装到使用(内附下载地址)</a>
+			</p>
+			<h2>第3章 CSS Sprite雪碧图的应用</h2>
+			<p>通过简单的导航实例，完成静态页面,讲解如何设置background-position属性来使用css sprite雪碧图</p>
+			<p>3-1 静态页面实现</p>
+			<p><img src="images/navImg.jpg" alt=""></p>
+			<p>3-2 查看案例demo <a href="nav.html">编程练习</a></p>
+			<p>3-3 CSS Sprite 应用 </p>
+			<p><img src="images/sprite.jpg" alt="" title="实现的效果和参考代码"></p>
+			<p>3-4 查看案例demo <a href="sprite.html">编程练习</a></p>
+			<h2>第4章 编程挑战</h2>
+			<p>要实现一个这样登陆框的效果，需要写出完整的HTML和CSS代码</p>
+			<blockquote>
+			1.注意标签语义化，按钮要使用Button，同时要reset button 默认样式。<br>
+			2.表单使用form，输入框使用input，表单要使用css美化，例如背景色和边框等。<br>
+			3.按钮样式要使用雪碧图完成。
+			</blockquote>
+			<p>编辑挑战(参考代码) <a href="priatice.html">雪碧图实战案例</a></p>
+		</div>
+	</body>
+</html>
