@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="Keywords" content="快速做网站，优设网站教程，优设网，个人如何做网站，怎么给公司做网站">
+    <meta name="description" content="四分钟制作一个美观的网页！优设网，网页设计师联盟" />
+<title>四分钟制作一个美观的网页 - 优设网</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://hao.uisdc.com/cssmagic/css/style.css">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7aeefdb15fe9aede961eee611c7e48a5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="http://image.uisdc.com/wp-content/uploads/2016/10/uisdc.png" alt="uisdc logo">
+      <h1>四分钟制作一个美观的网页</h1>
+      <p>
+        <a href="http://www.uisdc.com/" target="_blank">优秀网页设计</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="start">
+        <p>你现在看到的这个来自jgthms的页面，是一个非常有趣的案例，你一定觉得很简单？没关系，请继续跟着我们的指引往下点击链接，会发现神奇的变化。</p>
+        <p>比如你现在有一个产品介绍、个人展示页面、或者是一个想要和其它人分享的想法。在你将它发布到网上之前，你想要把它设计一下，让它看起来更加易读、美观。</p>
+        <p>你需要做的第一件事是什么？<a class="step" data-step="0" href="#content">戳这里试试</a></p>
+      </section>
+
+      <section id="content">
+        <h2>先来点内容</h2>
+        <p><strong>设计</strong>的目的是为了提高演示内容的易读和阅读体验。可能听起来都明白，但是内容是一个网站<strong>最主要最基本的</strong>元素，而不是将其放在最后考虑，所以要以内容优先，设计服务于内容。</p>
+        <p>比如当前你正在阅读的内容，我们需要一些样式使其变的更加易读。</p>
+        <p>假设你已经完成了内容的编写，下面让我们创建一个 <code>style.css</code> 文件，<a class="step" data-step="1" href="#centering">第一步</a>你需要写些什么?</p>
+      </section>
+
+      <section id="centering">
+        <h2>让内容居中</h2>
+        <p>过长的文字锻炼行所占空间比较大，浏览起来比较困难，需要更多的眼球转动，因此我们需要限制一行所要呈现的内容，以此来降低阅读疲劳。可以大大的提高可读性和吸引力。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+        <p>给文字添加了基本的P标签以后, 我们需要给<a class="step" data-step="2" href="#font-family">文字本身</a>添加些什么样式呢?</p>
+      </section>
+
+      <section id="font-family">
+        <h2>没错！控制字体样式</h2>
+        <p>浏览器的默认字体<code>"Times"</code>, 看起来没什么特色， 不妨我们换成<strong>非衬线</strong>便于阅读的字体，比如 <code>"Helvetica"</code> 或者 <code>"Arial"</code> 或许可以提升阅读美观度。在中文中，为了兼顾多数的浏览器，不妨使用下面这个字体选择方案。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: Arial, 微软雅黑，<span class="string">"Microsoft yahei"</span>, <span class="string">"Hiragino Sans GB"</span>, <span class="string">"冬青黑体简体中文 w3"</span>, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
+}</pre>
+        <p>如果你想使用衬线字体, 可以尝试 <code>"Georgia"</code>。</p>
+        <p>怎么样，解决了字体是不是更加美观了？下面让我们做一些更加能提高<a class="step" data-step="3" href="#spacing">阅读体验</a>的方法。</p>
+      </section>
+
+      <section id="spacing">
+        <h2>空间</h2>
+        <p>当一个网页看起来混乱或者拥挤的时候, 通常是没有给文字留有<strong>呼吸空间</strong>的问题。 不妨给你的内容加入些空间和距离，以此来提升视觉吸引力。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">line-height</span>: <span class="number">1.75</span>;
+  <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
+}
+
+<span class="selector">h2</span> {
+  <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+}</pre>
+        <p>怎么样，看起来是不是酷毙了！别停下，让我们继续做一些<a class="step" data-step="4" href="#color-contrast">改变</a>。</p>
+      </section>
+
+      <section id="color-contrast">
+        <h2>颜色 &amp; 对比</h2>
+        <p>白色背景上配上纯黑色的文字会不会显的太刺激和突兀，选择一个灰度稍微低点的黑色，使页面阅读起来更加<strong>舒适</strong>。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}</pre>
+        <p>使用适当的<strong>对比</strong>, 可以凸现那些<strong>重点</strong>的词语。</p>
+<pre><span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}</pre>
+        
+        <p>等等！是不是觉得背景还不够酷，我们也可以在<a href="http://hao.uisdc.com/" target="_blank" style="color:#333">hao.uisdc.com</a> <strong>资源下载</strong>中找到一些纹理网站给背景设置点铺满屏幕的纹理。</p>
+        <p>虽然大部分的网页已经被有效的改进，但是这些代码会不会觉得有些混乱和格格不入，就像你桌子上那些随处摆放的物件一样，让我们给它添加一些装饰将它们合理收纳，保持<a class="step" data-step="5" href="#balance">视觉平衡</a>。</p>
+      </section>
+
+      <section id="balance">
+        <h2>视觉平衡</h2>
+        <p>通过一些基本的样式调整就可以带来页面的视觉平衡。</p>
+<pre><span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#fff</span>;
+}
+
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}</pre>
+        <p>对于一些链接，为了方便点击和区分，我们不妨给他们提升一些<a class="step" data-step="6" href="#primary-color">识别度</a>。</p>
+      </section>
+
+      <section id="primary-color">
+        <h2>主色</h2>
+        <p>很多品牌都有自己的<strong>主色调</strong>以此来作为视觉的标识，在一个网站上，这个主色可以运用到用来强调互动的颜色，比如<strong>链接</strong>。</p>
+<pre><span class="selector">a</span> {
+  <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
+}</pre>
+        <p>但是为了保证视觉平衡，我们需要增加一些<a class="step" data-step="7" href="#secondary-colors">辅助颜色</a>。</p>
+      </section>
+
+      <section id="secondary-colors">
+        <h2>次要颜色</h2>
+        <p>主色调可以通过一些微妙的辅助色来提升整体的视觉表现，而这些辅助颜色可以运用到边框、背景、效果或者文本。</p>
+<pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+}
+
+<span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#ffffff</span>;
+  <span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#d8dee9</span>;
+  <span class="attribute">color</span>: <span class="number">#a7adba</span>;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
+}</pre>
+        <p>添加了不少的细节效果，为什么不改变些<a class="step" data-step="9" href="#custom-font">其它呢</a>？</p>
+      </section>
+
+      
+
+      <section id="images">
+        <h2>
+          <img src="http://image.uisdc.com/wp-content/uploads/2016/10/images.png" alt="Spongebob rainbow meme saying 'Images'">
+        </h2>
+        <p>图形和图标可以用来装饰你的网站，辅助你的内容，或者更有效传达网站的信息。</p>
+        <p>让我们给头部添加一个从图库导航<a href="http://hao.uisdc.com/photo/" target="_blank">http://hao.uisdc.com/</a><strong>下载的背景图片</strong>。</p>
+        <p>图片地址：http://www.resplashed.com/img/a16964955aee.jpg</p>
+<pre><span class="selector">header</span> {
+  <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
+  <span class="attribute">background-image</span>: url(<span class="string">"http://image.uisdc.com/wp-content/uploads/2016/10/header.jpg"</span>);
+  <span class="attribute">background-position</span>: center top;
+  <span class="attribute">background-repeat</span>: no-repeat;
+  <span class="attribute">background-size</span>: cover;
+  <span class="attribute">line-height</span>: <span class="number">1.2</span>;
+  <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-align</span>: center;
+}</pre>
+        <p>然后添加一个<strong>logo</strong></p>
+<pre><span class="selector">header img</span> {
+  <span class="attribute">display</span>: inline-block;
+  <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
+  <span class="attribute">vertical-align</span>: top;
+  <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
+}</pre>
+        <p>让我们再添加一些文字样式</p>
+<pre><span class="selector">header h1</span> {
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
+  <span class="attribute">font-weight</span>: <span class="number">300</span>;
+}
+
+<span class="selector">header a</span> {
+  <span class="attribute">border</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#e81c4f</span>;
+  <span class="attribute">border-radius</span>: <span class="number">290486</span><span class="unit">px</span>;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">0.8</span><span class="unit">em</span>;
+  <span class="attribute">letter-spacing</span>: <span class="number">0.2</span><span class="unit">em</span>;
+  <span class="attribute">padding</span>: <span class="number">1</span><span class="unit">em</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-transform</span>: uppercase;
+  <span class="attribute">text-decoration</span>: none;
+  <span class="attribute">transition</span>: none <span class="number">200</span><span class="unit">ms</span> ease-out;
+  <span class="attribute">transition-property</span>: color, background;
+}
+
+<span class="selector">header a:hover</span> {
+  <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
+  <span class="attribute">color</span>: white;
+}</pre>
+        <p>Duang！魔法发生了！赶紧回顶部看看效果吧。<a href="#header">查看顶部效果</a>!</p>
+        <p>在短短的几分钟内，我们就设计了一个像样的网页。等等，想看看这个有趣的案例<a class="step" data-step="10" href="#share">是谁</a>做的……</p>
+       
+      </section>
+
+
+
+      <footer>       
+        <a class="button" href="http://jgthms.com/" target="_blank">作者<strong>@jgthms</strong></a>
+        <a class="button" href="http://www.uisdc.com/" target="_blank">翻译 <strong>优设网</strong></a>
+      </footer>
+    </main>
+
+    <a id="visited" href="#share">想直接跳转到结尾，观看最终效果么？</a>
+
+    <script type="text/javascript">
+    var steps = document.querySelectorAll('.step');
+    var body = document.querySelector('body');
+    var html = document.querySelector('html');
+
+    for (var i=0; i < steps.length; i++) {
+      var element = steps[i];
+      element.onclick = function(event) {
+        var number = this.dataset.step;
+        var target = this.href;
+        addStep(number, target);
+      }
+    };
+
+    function removeVisited() {
+      if (document.getElementById('visited')) {
+        body.removeChild(document.getElementById('visited'));
+      }
+    }
+
+    function addStep(number, target) {
+      html.className += ' step' + number;
+
+      removeVisited();
+
+      if (target !== '') {
+        var id = target.split('#')[1];
+        document.getElementById(id).className = 'animate';
+      }
+
+      if (number === '7') {
+        loadGoogleFont();
+      }
+    }
+
+    visited.onclick = function() {
+      loadGoogleFont();
+      for (var i=0; i < 11; i++) {
+        html.className += ' step' + i;
+      }
+      removeVisited();
+    }
+
+    WebFontConfig = {
+      google: {
+        families: ['Roboto:300,400,500']
+      }
+    };
+
+    function loadGoogleFont() {
+      (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'css/webfont';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    }
+    </script>
+
+
+</body>
+<div></div>
+</html>
