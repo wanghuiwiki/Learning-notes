@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>编程练习</title>
+	</head>
+	<body>
+	<blockquote>
+	1、新窗口打开时弹出确认框，是否打开 <br>
+	提示: 使用 if 判断确认框是否点击了确定，如点击弹出输入对话框，否则没有任何操作。<br>
+	2、通过输入对话框，确定打开的网址，默认为 http：//www.dhnblog.com/<br>
+	3、打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+	</blockquote>
+	<pre>
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;title&gt;浏览器对象&lt;/title&gt;
+	 &lt;script type="text/javascript"&gt;  
+		function openWindon(){ 
+			if(confirm("确定打开新窗口吗？")){
+				var url = prompt("请输入一个网址","http://www.dhnblog.com/");  
+				window.open( url,"_blank","toolbar=no, menubar=no, scrollbars=yes,  width=400, height=400");
+			}
+		}  
+	 &lt;/script&gt; 
+	&lt;/head&gt;
+	&lt;body&gt;
+	  &lt;input type="button" value="新窗口打开网站" onclick="openWindon()" /&gt; 
+	&lt;/body&gt;
+	&lt;/html&gt;
+	</pre>
+	</body>
+</html>
