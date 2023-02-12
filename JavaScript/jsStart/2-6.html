@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript-关闭窗口（window.close）</title>
+	</head>
+	<body>
+		<p>close()关闭窗口</p>
+		<p>用法：<code>window.close();   //关闭本窗口</code></p>
+		<p>或</p>
+		<p>&lt;窗口对象&gt;.close();   //关闭指定的窗口</p>
+		<p>例如:关闭新建的窗口。</p>
+		<pre>
+		&lt;script type="text/javascript"&gt;
+		   var mywin=window.open('http://www.imooc.com'); //将新打的窗口对象，存储在变量mywin中
+		   mywin.close();
+		&lt;/script&gt;
+		</pre>
+		<p>注意:上面代码在打开新窗口的同时，关闭该窗口，看不到被打开的窗口。</p>
+	</body>
+</html>
