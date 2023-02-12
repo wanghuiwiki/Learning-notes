@@ -27,7 +27,6 @@ mychar="hello";
 1. 在JS中区分大小写，如变量mychar与myChar是不一样的，表示是两个变量。
 2. 变量虽然也可以不声明，直接使用，但不规范，需要先声明，后使用。
 
- ***
 ## if...else判断
 
  if...else语句是在指定的条件成立时执行代码，在条件不成立时执行else后的代码。
@@ -113,7 +112,6 @@ add2();//调用函数,直接写函数名.
   <input type="button"  value="点击我" onclick="contxt()" />  
 </form>
 ```
-***
 ## JavaScript-输出内容
 `document.write() `可用于直接向 HTML 输出流写内容。简单的说就是直接在网页中输出内容。
 **第一种:输出内容用""括起，直接输出""号内的内容。**
@@ -270,22 +268,29 @@ else
 open() 方法可以查找一个已经存在或者新建的浏览器窗口。
 
 语法：`window.open([URL], [窗口名称], [参数字符串])`
+
 **参数说明:**
+
 >URL：可选参数，在窗口中要显示网页的网址或路径。如果省略这个参数，或者它的值是空字符串，那么窗口就不显示任何文档。
 >窗口名称：可选参数，被打开窗口的名称。
 >    1.该名称由字母、数字和下划线字符组成。
->    2."_top"、"_blank"、"_self"具有特殊意义的名称。
->       _blank：在新窗口显示目标网页
->       _self：在当前窗口显示目标网页
->       _top：框架网页中在上部窗口中显示目标网页
->    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。
->    4.name 不能包含有空格。
+>    2."_top"、"_blank"、"_self"具有特殊意义的名称。<br>
+>       _blank：在新窗口显示目标网页<br>
+>       _self：在当前窗口显示目标网页<br>
+>       _top：框架网页中在上部窗口中显示目标网页<br>
+>    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。<br>
+>    4.name 不能包含有空格。<br>
 >参数字符串：可选参数，设置窗口参数，各参数用逗号隔开。
+
 参数表:
+
 ![图片](https://img.mukewang.com/52e3677900013d6a05020261.jpg)
+
 例如:打开http://www.dhnblog.com网站，大小为300px * 200px，无菜单，无工具栏，无状态栏，有滚动条窗口：
+
 ```
-<script type="text/javascript"> window.open('http://www.dhnblog.com','_blank','width=300,height=200,menubar=no,toolbar=no, status=no,scrollbars=yes')
+<script type="text/javascript">
+window.open('http://www.dhnblog.com','_blank','width=300,height=200,menubar=no,toolbar=no, status=no,scrollbars=yes')
 </script>
 ```
 注意：运行结果考虑浏览器兼容问题。
@@ -305,11 +310,13 @@ close()关闭窗口
 </script>
 ```
 注意:上面代码在打开新窗口的同时，关闭该窗口，看不到被打开的窗口。
-***
 ## 认识DOM
 >文档对象模型DOM（Document Object Model）定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。
+
 **HTML文档可以说由节点构成的集合，三种常见的DOM节点:**
+
 ![图片](https://img.mukewang.com/52e4bd0f0001dd8d04830279.jpg)
+
 1. 元素节点：上图中&lt;html&gt;、&lt;body&gt;、&lt;p&gt;等都是元素节点，即标签。
 2. 文本节点:向用户展示的内容，如<li>...</li>中的JavaScript、DOM、CSS等文本。
 3. 属性节点:元素属性，如<a>标签的链接属性href="http://www.dhnblog.com"。
@@ -320,7 +327,9 @@ close()关闭窗口
 语法` document.getElementById("id") `
 看看下面代码:
 ![图片](https://img.mukewang.com/52e4c5950001054207900423.jpg)
+
 结果:null或[object HTMLParagraphElement]
+
 注:获取的元素是一个对象，如想对元素进行操作，我们要通过它的属性或方法。
 ```
 <script type="text/javascript">
@@ -353,7 +362,9 @@ HTML DOM 允许 JavaScript 改变 HTML 元素的样式。如何改变 HTML 元�
 注意:Object是获取的元素对象，如通过document.getElementById("id")获取的元素。
 
 基本属性表（property）:
+
 ![图片](https://img.mukewang.com/52e4d4240001dd6c04850229.jpg)
+
 注意:该表只是一小部分CSS样式属性，其它样式也可以通过该方法设置和修改。
 
 看看下面的代码:改变p元素的样式，将颜色改为红色，字号改为20,背景颜色改为蓝：
@@ -405,8 +416,11 @@ value取值:
 ```
 ## 控制类名（className 属性）
 >className 属性设置或返回元素的class 属性。
+
 语法`object.className = classname`
+
 作用:
+
 1. 获取元素的class 属性
 2. 为网页内的某个元素指定一个css样式来更改该元素的外观
 看看下面代码，获得p元素的 class 属性和改变className：
