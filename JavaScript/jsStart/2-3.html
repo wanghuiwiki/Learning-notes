@@ -29,5 +29,25 @@
 		&lt;/script&gt;
 		</pre>
 		<p style="font-weight: bold;">注: 消息对话框是排它的，即用户在点击对话框按钮前，不能进行任何其它操作。</p>
+		<!-- 演示代码 -->
+		<pre>
+		&lt;script type="text/javascript"&gt;
+		function rec(){
+		var mymessage=confirm("当点击按钮时，完成性别确认");
+		if(mymessage==true)
+		{
+			document.write("你是女士!");
+		}
+		else
+		{
+			document.write("你是男士!");
+		}
+		}    
+		&lt;/script&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+		&lt;input name="button" type="button" onClick="rec()" value="点击我，弹出确认对话框" /&gt;
+		&lt;/body&gt;
+		</pre>
 	</body>
 </html>
