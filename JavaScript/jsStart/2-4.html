@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript-提问（prompt 消息对话框）</title>
+	</head>
+	<body>
+		<p><code>prompt</code>弹出消息对话框,通常用于询问一些需要与用户交互的信息。弹出消息对话框（包含一个确定按钮、取消按钮与一个文本输入框）。</p>
+		<p>语法: <code>prompt(str1, str2);</code></p>
+		<p>参数说明：</p>
+		<pre>
+		str1: 要显示在消息对话框中的文本，不可修改
+		str2：文本框中的内容，可以修改
+		</pre>
+		<p>返回值:</p>
+		<pre>
+		1. 点击确定按钮，文本框中的内容将作为函数返回值
+		2. 点击取消按钮，将返回null
+		</pre>
+		<p>看看下面代码:</p>
+		<pre>
+		var myname=prompt("请输入你的姓名:");
+		if(myname!=null)
+		  {   alert("你好"+myname); }
+		else
+		  {  alert("你好 my friend.");  }
+		</pre>
+		<p>注:在用户点击对话框的按钮前，不能进行任何其它操作。</p>
+		<!-- 演示代码 -->
+		<pre>
+		&lt;script type="text/javascript"&gt;
+		  function rec(){
+			var score; //score变量，用来存储用户输入的成绩值。
+			score = prompt("输入你的成绩,根据输入的成绩做出评价");
+			if(score&gt;=90)
+			{
+			   document.write("你很棒!");
+			}
+			else if(score&gt;=75)
+		    {
+			   document.write("不错吆!");
+			}
+			else if(score&gt;=60)
+		    {
+			   document.write("要加油!");
+		    }
+		    else
+			{
+		       document.write("要努力了!");
+			}
+		  }
+		&lt;/script&gt;
+		</pre>
+	</body>
+</html>
