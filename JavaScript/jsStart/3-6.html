@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>控制类名（className 属性）</title>
+	</head>
+	<body>
+		<p>className 属性设置或返回元素的class 属性。</p>
+		<p>语法：<code>object.className = classname</code></p>
+		<p>作用:</p>
+		<ol>
+			<li>.获取元素的class 属性</li>
+			<li>为网页内的某个元素指定一个css样式来更改该元素的外观</li>
+			<p>看看下面代码，获得 p元素的 class 属性和改变className：</p>
+		</ol>
+		<p style="width:100%"><img src="https://img.mukewang.com/52e4e28c0001c97f07980838.jpg" alt=""></p>
+		<p>演示代码:</p>
+		<pre>
+		&lt;style&gt;
+		body{ font-size:16px;}
+		.one{
+			border:1px solid #eee;
+			width:230px;
+			height:50px;
+			background:#ccc;
+			color:red;
+		}
+		.two{
+			border:1px solid #ccc;
+			width:230px;
+			height:50px;
+			background:#9CF;
+			color:blue;
+		}
+		&lt;/style&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+		&lt;p id="p1" &gt; JavaScript使网页显示动态效果并实现与用户交互功能。&lt;/p&gt;
+		&lt;input type="button" value="添加样式" onclick="add()"/&gt;
+		&lt;p id="p2" class="one"&gt;JavaScript使网页显示动态效果并实现与用户交互功能。&lt;/p&gt;
+		&lt;input type="button" value="更改外观" onclick="modify()"/&gt;
+		
+		&lt;script type="text/javascript"&gt;
+		   function add(){
+			  var p1 = document.getElementById("p1");
+			  p1.className="one";
+		   }
+		   function modify(){
+			  var p2 = document.getElementById("p2");
+			   p2.className="two";
+		   }
+		&lt;/script&gt;
+		</pre>
+	</body>
+</html>
