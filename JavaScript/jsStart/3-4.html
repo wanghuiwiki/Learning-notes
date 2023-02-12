@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>改变 HTML 样式</title>
+	</head>
+	<body>
+		<p>HTML DOM 允许 JavaScript 改变 HTML 元素的样式。如何改变 HTML 元素的样式呢？</p>
+		<p>语法<code>Object.style.property=new style;</code></p>
+		<p style="font-weight: bold;">注意:Object是获取的元素对象，如通过document.getElementById("id")获取的元素。</p>
+		<p>基本属性表（property）:</p>
+		<p style="font-weight: bold;"><img src="https://img.mukewang.com/52e4d4240001dd6c04850229.jpg" alt=""></p>
+		<p>注意:该表只是一小部分CSS样式属性，其它样式也可以通过该方法设置和修改。</p>
+		<p>看看下面的代码:</p>
+		<p>改变 p元素的样式，将颜色改为红色，字号改为20,背景颜色改为蓝：</p>
+		<pre>
+		&lt;p id="pcon"&gt;Hello World!&lt;/p&gt;
+		&lt;script&gt;
+		   var mychar = document.getElementById("pcon");
+		   mychar.style.color="red";
+		   mychar.style.fontSize="20";
+		   mychar.style.backgroundColor ="blue";
+		&lt;/script&gt;
+		</pre>
+	</body>
+</html>
