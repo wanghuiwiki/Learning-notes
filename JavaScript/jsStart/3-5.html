@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>显示和隐藏（display属性）</title>
+	</head>
+	<body>
+		<p>网页中经常会看到显示和隐藏的效果，可通过display属性来设置。</p>
+		<p>语法<code>Object.style.display = value</code></p>
+		<p>注意:Object是获取的元素对象，如通过document.getElementById("id")获取的元素。</p>
+		<p>value取值:</p>
+		<p style="width: 100%;"><img src="https://img.mukewang.com/52e4dba5000179da04110095.jpg" alt=""></p>
+		<p>看看下面代码:</p>
+		<p style="width: 100%;"><img src="https://img.mukewang.com/52e4dcf50001bead09310689.jpg" alt=""></p>
+		<p>演示代码:</p>
+		<pre>
+		&lt;script type="text/javascript"&gt;
+			function hidetext()  
+			{  
+			var mychar = document.getElementById("con");
+			mychar.style.display="none"
+			}  
+			function showtext()  
+			{  
+			var mychar = document.getElementById("con")
+			mychar.style.display="block;";
+			}
+		&lt;/script&gt;
+		&lt;/head&gt;
+		&lt;body&gt; 
+		&lt;h1>JavaScript&lt;/h1&gt; 
+		&lt;p id="con">做为一个Web开发师来说，如果你想提供漂亮的网页、令用户满意的上网体验，JavaScript是必不可少的工具。&lt;/p&gt;
+		&lt;form>
+		   &lt;input type="button" onclick="hidetext()" value="隐藏内容" /&gt;
+		   &lt;input type="button" onclick="showtext()" value="显示内容" /&gt;
+		&lt;/form>
+		&lt;/body&gt;
+		</pre>
+	</body>
+</html>
